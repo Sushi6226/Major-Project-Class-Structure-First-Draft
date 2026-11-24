@@ -8,8 +8,11 @@ The program will allow student to keep track of homework deadline, mark assignme
 MAIN CLASSES
 
 Asignment: it stores assignment information, including title, due date and completion status
+
 Course: it stores course details and manages assignments for each courses.
+
 StudySession: it tracks a study topic, its duration and session status.
+
 Planner: it manages the student's courses and study sessions, displays upcoming work and provides file-saving functionality.
 
 CLASS RELATIONSHIPS
