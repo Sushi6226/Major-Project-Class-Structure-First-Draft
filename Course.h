@@ -4,7 +4,7 @@
 #include <vector>
 #include "Assignment.h"
 
-// Responsibility of course.h :
+// Responsibility of Course.h :
 // Represents one course in the student's planner.
 // Stores the course name, instructor, and assignments.
 // Can add, complete and display assignments.

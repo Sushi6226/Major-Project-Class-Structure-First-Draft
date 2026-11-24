@@ -16,6 +16,6 @@ CLASS RELATIONSHIPS
 
 The planner owns multiple Course and StudySession objects. Each Course owns multiple Assignment object and it uses composition.
 
-CLASS DIAGRAM
+CLASS DIAGRAM:
 
-Place the Mermaid class diagram here. 
+
