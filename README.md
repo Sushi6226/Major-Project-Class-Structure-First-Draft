@@ -19,3 +19,52 @@ The planner owns multiple Course and StudySession objects. Each Course owns mult
 CLASS DIAGRAM:
 
 
+classDiagram
+    class Assignment 
+        {
+            -string title
+            -string dueDate
+            -bool completed
+            +markComplete() void
+            +displayDetails() void
+            +getDueDate() string
+            +isCompleted() bool
+        }
+
+    class Course 
+        {
+            -string name
+            -string instructor
+            -vector~Assignment~ assignments
+            +addAssignment(task: Assignment) void
+            +markAssignmentComplete(title: string) void
+            +showAssignments() void
+            +getName() string
+            +getAssignments() vector~Assignment~
+        }
+
+    class StudySession 
+        {
+            -string topic
+            -int durationMinutes
+            -bool started
+            -bool finished
+            +start() void
+            +finish() void
+            +displayDetails() void
+        }
+
+    class Planner 
+        {
+            -string studentName
+            -vector~Course~ courses
+            -vector~StudySession~ studySessions
+            +addCourse(course: Course) void
+            +addStudySession(session: StudySession) void
+            +showUpcomingWork() void
+            +saveToFile(filename: string) void
+        }
+ 
+    Planner "1" *-- "0..*" Course : owns
+    Course "1" *-- "0..*" Assignment : contains
+    Planner "1" *-- "0..*" StudySession : tracks
