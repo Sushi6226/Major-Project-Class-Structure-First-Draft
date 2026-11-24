@@ -1,5 +1,5 @@
 
-#pragma once
+#pragma once // its works as backup plan ig
 #include <string>
 
 // Responsibility of Assignment.h:
@@ -10,7 +10,7 @@
 class Assignment 
 {
     private:
-        std::string title;
+        std::string title;  
         std::string dueDate;
         bool completed;
 
